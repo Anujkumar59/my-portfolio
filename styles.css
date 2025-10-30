@@ -593,6 +593,114 @@ span{
 
 
 
+/* Contact Section */
+.contact {
+  padding: 5rem 2rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  text-align: center;
+}
+
+
+.contact .description {
+  font-size: 1.6rem;
+  color: var(--text-light-color);
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+/* Two-Column Layout */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Left Side Info */
+/* Contact Info Section */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+}
+
+/* Each Contact Item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  font-size: 1.6rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+}
+
+/* Icon Styling */
+.contact-item .icon {
+  color: var(--main-color);
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover .icon {
+  transform: scale(1.2);
+  color: var(--main-color);
+}
+
+/* Text Links */
+.contact-item a,
+.contact-item span {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--main-color);
+  letter-spacing: 0.5px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background: var(--main-color);
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+
+/* Right Side (Your Existing Form Styles) */
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -634,6 +742,9 @@ span{
  .contact form .input-box input:hover,
 .contact form textarea:hover{ border: .2rem solid var(--main-color);
     border-radius: .8rem;}
+
+
+
 .footer{
     display: flex;
     justify-content: space-between;
